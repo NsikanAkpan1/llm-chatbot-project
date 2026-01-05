@@ -1,0 +1,10 @@
+langchain
+langchain-community
+langchain-chroma
+faiss-cpu
+sentence-transformers
+transformers
+llama-cpp-python
+numpy
+pandas
+torch
