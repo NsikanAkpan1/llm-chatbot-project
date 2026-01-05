@@ -32,3 +32,6 @@ Users can ask questions related to the provided dataset, and the chatbot retriev
 
 ## Notes
 This is an academic project focused on learning and experimentation. The code reflects an iterative development process.
+
+## Example Output
+![Chatbot Output](chatbot_output.png)
