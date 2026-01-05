@@ -1,24 +1,34 @@
-# LLM-Based Chatbot for Domain-Specific Question Answering
+# LLM-Based Chatbot (RAG Pipeline)
 
 ## Overview
-This project implements an AI-powered chatbot using a Large Language Model (LLM) to answer questions from a structured dataset. The project was completed as part of my MSc in Automation Control and Robotics.
+This project implements a Retrieval-Augmented Generation (RAG) chatbot using a Large Language Model (LLM). The system retrieves relevant documents from a vector database and uses them as context to generate accurate, grounded responses.
 
-## Key Features
-- Data preprocessing and structuring for NLP tasks
-- Prompt engineering to guide LLM responses
-- Iterative testing and refinement of chatbot outputs
-- Python-based implementation
+This project was developed as part of my MSc in Automation Control and Robotics.
+
+## Architecture
+- Document loading and preprocessing
+- Text chunking using recursive character splitting
+- Embedding generation using HuggingFace models
+- Vector storage using FAISS
+- Similarity-based document retrieval
+- LLM-based response generation with prompt templates
 
 ## Technologies Used
 - Python
-- Pandas, NumPy
-- LLM API / framework
-- GitHub for version control
+- LangChain
+- HuggingFace Transformers & Embeddings
+- FAISS vector database
+- LlamaCpp (local inference)
+- NumPy, Pandas
 
-## What I Learned
-- Practical application of NLP concepts
-- Importance of data quality in AI systems
-- Prompt engineering and response evaluation techniques
+## Key Features
+- Domain-specific question answering
+- Prompt engineering for controlled responses
+- Similarity search over embedded documents
+- Local LLM inference for privacy and efficiency
 
-## Status
-Academic project – further improvements planned.
+## Example Use Case
+Users can ask questions related to the provided dataset, and the chatbot retrieves relevant context before generating concise answers.
+
+## Notes
+This is an academic project focused on learning and experimentation. The code reflects an iterative development process.
